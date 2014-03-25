@@ -138,17 +138,17 @@ GameManager.prototype.move = function (direction) {
 
           // Update the score
           self.score += merged.value;
-          if(merged.value == 2    && doctor_so_far < 1) {  doctor_so_far = 1; }
-          if(merged.value == 4    && doctor_so_far < 2) {  doctor_so_far = 2; }
-          if(merged.value == 8    && doctor_so_far < 3) {  doctor_so_far = 3; }
-          if(merged.value == 16   && doctor_so_far < 4) {  doctor_so_far = 4; }
-          if(merged.value == 32   && doctor_so_far < 5) {  doctor_so_far = 5; }
-          if(merged.value == 64   && doctor_so_far < 6) {  doctor_so_far = 6; }
-          if(merged.value == 128  && doctor_so_far < 7) {  doctor_so_far = 7; }
-          if(merged.value == 256  && doctor_so_far < 8) {  doctor_so_far = 8; }
-          if(merged.value == 512  && doctor_so_far < 9) {  doctor_so_far = 9; }
-          if(merged.value == 1024 && doctor_so_far < 10) { doctor_so_far = 10; }
-          if(merged.value == 2048 && doctor_so_far < 11) { doctor_so_far = 11; }
+          if(merged.value == 2    && step_so_far < 1) {  step_so_far = 1; }
+          if(merged.value == 4    && step_so_far < 2) {  step_so_far = 2; }
+          if(merged.value == 8    && step_so_far < 3) {  step_so_far = 3; }
+          if(merged.value == 16   && step_so_far < 4) {  step_so_far = 4; }
+          if(merged.value == 32   && step_so_far < 5) {  step_so_far = 5; }
+          if(merged.value == 64   && step_so_far < 6) {  step_so_far = 6; }
+          if(merged.value == 128  && step_so_far < 7) {  step_so_far = 7; }
+          if(merged.value == 256  && step_so_far < 8) {  step_so_far = 8; }
+          if(merged.value == 512  && step_so_far < 9) {  step_so_far = 9; }
+          if(merged.value == 1024 && step_so_far < 10) { step_so_far = 10; }
+          if(merged.value == 2048 && step_so_far < 11) { step_so_far = 11; }
 
           // The mighty 2048 tile
           if (merged.value === 2048) self.won = true;

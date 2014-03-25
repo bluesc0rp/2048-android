@@ -57,13 +57,6 @@ KeyboardInputManager.prototype.listen = function () {
   retry.addEventListener("click", this.restart.bind(this));
   retry.addEventListener("touchend", this.restart.bind(this));
 
-  var t = document.querySelector(".tweet");
-  t.addEventListener("click", tweet);
-  t.addEventListener("touchend", tweet);
-  
-  var fb = document.querySelector(".facebook");
-  fb.addEventListener("click", facebook);
-  fb.addEventListener("touchend", facebook);
 
   // Listen to swipe events
   var touchStartClientX, touchStartClientY;
